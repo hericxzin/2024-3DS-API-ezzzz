@@ -1,0 +1,19 @@
+@import url( );
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --licorice: #220901ff;
+    --blood-red: #621708ff;
+    --penn-red: #941b0cff;
+    --rust: #bc3908ff;
+    --orange-web: #f6aa1cff;
+    --verde: #28a745; 
+}
+
+body {
+    background-color: var(--verde); 
+}
