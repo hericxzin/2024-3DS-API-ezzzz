@@ -1,19 +1,49 @@
-@import url( );
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Roboto+Slab:wght@100..900&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
 }
 
-:root {
-    --licorice: #220901ff;
-    --blood-red: #621708ff;
-    --penn-red: #941b0cff;
-    --rust: #bc3908ff;
-    --orange-web: #f6aa1cff;
-    --verde: #28a745; 
+:root{
+    --roxo: rgb(62, 5, 40);
+    --vermelho: #9a031eff;
+    --amarelo: rgb(36, 251, 136);
+    --laranja: #e36414ff;
+    --azul: rgb(237, 128, 128);
+    --preto: rgb(0, 0, 0);
+    --fonte-titulo:"New Amsterdam", sans-serif;
+    --fonte-texto:"Roboto Slab", serif;
 }
 
-body {
-    background-color: var(--verde); 
+body{
+    background-color: var(--azul);
+    font-family: var(--fonte-texto);
+    color: var(--preto) 
 }
+
+header{
+    background-color: var(--amarelo);
+    text-align: center;
+}
+
+h1{
+    font-family: var(--fonte-titulo);
+    font-size: 3rem;
+    color: var(--roxo);
+    padding: 1.5rem 0;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--vermelho);
+    font-size: 2rem;
+    margin: 0 2rem 1rem 0;
+}
+ 
