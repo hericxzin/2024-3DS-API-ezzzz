@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Gowun+Batang:wght@400;700&display=swap');
 
 *{
     margin: 0;
@@ -6,44 +6,78 @@
 }
 
 :root{
-    --roxo: rgb(62, 5, 40);
-    --vermelho: #9a031eff;
-    --amarelo: rgb(36, 251, 136);
-    --laranja: #e36414ff;
-    --azul: rgb(237, 128, 128);
-    --preto: rgb(0, 0, 0);
-    --fonte-titulo:"New Amsterdam", sans-serif;
-    --fonte-texto:"Roboto Slab", serif;
+--laranja: rgb(166, 0, 108);
+--branco: #ebebebff;
+--branco-prata: #c0c0c0ff;
+--azul: #3a6ea5ff;
+--azul-escuro: rgb(0, 24, 47);
+--fonte-titulo: "Fascinate Inline", system-ui;
+--fonte-texto: "Gowun Batang", serif;
 }
-
-body{
+body {
     background-color: var(--azul);
     font-family: var(--fonte-texto);
-    color: var(--preto) 
+    color: var(--branco);
+    height: 100vh;
 }
 
-header{
-    background-color: var(--amarelo);
+header {
+    background-color: var(--azul-escuro);
     text-align: center;
 }
 
-h1{
+h1 {
     font-family: var(--fonte-titulo);
-    font-size: 3rem;
-    color: var(--roxo);
-    padding: 1.5rem 0;
+    font-size: 3em;
+    color: var(--laranja);
+    padding: 0.5em 0;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: center;
     font-weight: 400;
 }
 
-nav a{
+nav a {
     text-decoration: none;
-    color: var(--vermelho);
-    font-size: 2rem;
-    margin: 0 2rem 1rem 0;
+    color: var(--branco);
+    font-size: 2em;
+    margin: 0 1em 0.5em 0;
 }
- 
+
+nav a:hover {
+    text-decoration: underline;
+    color: var(--laranja);
+    transform: scale(0.9);
+    transition: transform 0.2s;
+}
+
+.caixa-grafico{
+    margin: 5rem;
+}
+.caixa-grafico__texto{
+    font-size: 1.5em;
+    background-color: var(--laranja);
+    padding: 1em;
+    border-radius: 20px;
+    border: var(--branco-prata) double 10px;
+}
+
+span{
+    font-family: var(--font-titulo);
+    color: var(--azul-escuro);
+    font-size: 1.1em;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    width: 100%;
+    height: 2em;
+    margin-top: 2em;
+    font-size: 1.5em;
+}
